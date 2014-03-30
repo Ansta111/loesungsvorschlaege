@@ -14,7 +14,7 @@ public class Board {
         this.height = height;
     }
 
-    int getCurrentPlayer() {
+    public int getCurrentPlayer() {
         return currentPlayer;
     }
 
@@ -46,7 +46,7 @@ public class Board {
         }
     }
 
-    boolean canSet(int col) {
+    public boolean canSet(int col) {
         return col < width && 0 == board[height - 1][col];
     }
 

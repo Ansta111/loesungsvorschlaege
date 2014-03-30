@@ -1,6 +1,8 @@
-package de.hhu.propra.blatt2.connect4;
+package de.hhu.propra.blatt3.connect4;
 
 import de.hhu.propra.StdDraw;
+import de.hhu.propra.blatt2.connect4.Board;
+import de.hhu.propra.blatt2.connect4.BoardPrinter;
 
 import java.awt.Color;
 
@@ -15,7 +17,7 @@ public class GuiBoardPrinter implements BoardPrinter {
     private final double centerY;
     private Color c1, c2;
 
-    GuiBoardPrinter(Board board) {
+    public GuiBoardPrinter(Board board) {
         this.board = board;
         centerX = board.getWidth() / 2.0;
         centerY = board.getHeight() / 2.0;
